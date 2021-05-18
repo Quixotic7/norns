@@ -54,6 +54,10 @@
 //---- global lua state!
 lua_State *lvm;
 
+void* luaState() {
+  return lvm;
+}
+
 void w_run_code(const char *code) {
     l_dostring(lvm, code, "w_run_code");
     fflush(stdout);

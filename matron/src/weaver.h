@@ -93,3 +93,5 @@ extern void w_handle_startup_ready_timeout();
 
 // util callbacks
 extern void w_handle_system_cmd();
+
+extern void* luaState();
